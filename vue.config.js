@@ -1,4 +1,4 @@
 module.exports = {
     publicPath: process.env.NODE_ENV == 'production' ?
-    '/gpt3-ui' : '/'
+    '/gpt-3-landing' : '/'
 }
