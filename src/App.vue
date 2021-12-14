@@ -134,6 +134,23 @@ a {
     left: 0px;
 }
 
+.main-heading{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width:650px) {
+  .main-heading{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .main-heading{
+    font-size: 36px;
+  }
+}
+
 .section-heading {
   font-size: 34px;
   font-weight: 800;

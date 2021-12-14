@@ -1,7 +1,7 @@
 <template>
   <div class="intro flex lg:px-14 sm:px-10 px-8 lg:mx-12 md:mx-6 gap-3">
     <div class="flex flex-col text-content">
-      <h1 class="text-gradient font-black">Let's Build Something <br> amazing with GPT-3 <br> OpenAI </h1>
+      <h1 class="text-gradient main-heading">Let's Build Something <br> amazing with GPT-3 <br> OpenAI </h1>
       <p class="text-gray-400 py-5 break-words">
         Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing.
         Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
@@ -32,10 +32,6 @@ export default class Introduction extends Vue {}
 
 .text-content{
   width: 100%;
-}
-
-h1{
-  font-size: 3rem;
 }
 
 .contact-form{
@@ -85,20 +81,12 @@ h1{
 }
 
 @media screen and (max-width:650px) {
-  h1{
-    font-size: 40px;
-  }
   p {
-    font-size: 0.7em;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width:480px) {
-
-  h1{
-    font-size: 36px;
-  }
-
   .contact-form{
     input, button{
       font-size: 10px;

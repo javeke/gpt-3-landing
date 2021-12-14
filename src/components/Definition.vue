@@ -1,6 +1,6 @@
 <template>
     <section class="lg:px-14 sm:px-10 px-8 lg:mx-12 md:mx-6 lg:my-14 sm:my-12 my-8">
-        <div class="card lg:px-12 md:px-10 px-8 lg:py-14 md:py-12 py-10">
+        <div class="card lg:px-12 md:px-10 px-8 lg:py-14 md:py-12 py-10 bg-blog">
             <div class="definition">
                 <h3 class="text-white font-bold indicator">What is GPT-3</h3>
                 <p class="primary-color">
@@ -43,7 +43,6 @@
 
 .card{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: #042C54;
     border-radius: 8px;
 }
 
