@@ -73,10 +73,10 @@ export default class NavBar extends Vue {
     position: absolute;
     right: 0;
     top: 30px;
-    min-width: 150px;
+    min-width: 200px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba($color: #000000, $alpha: 0.2);
-    padding-top: 1rem;
+    padding: 1.2rem;
 }
 
 .mobile-sign-btns{
@@ -99,7 +99,7 @@ export default class NavBar extends Vue {
 
 @media screen and (max-width: 400px) {
    .mobile-nav{
-       min-width: 100px;
+       min-width: 150px;
    } 
 
    .mobile-nav-toggle{

@@ -7,6 +7,7 @@
     <Possibilities />
     <Bar />
     <Blog />
+    <Footer />
   </main>
 </template>
 
@@ -19,6 +20,7 @@ import Future from '@/components/Future.vue';
 import Possibilities from '@/components/Possibilities.vue';
 import Bar from '@/components/Bar.vue' 
 import Blog from '@/components/Blog.vue'
+import Footer from '@/components/Footer.vue';
 
 @Component({
   components:{
@@ -28,7 +30,8 @@ import Blog from '@/components/Blog.vue'
     Future,
     Possibilities,
     Bar,
-    Blog
+    Blog,
+    Footer
   }
 })
 export default class Home extends Vue {}

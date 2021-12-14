@@ -147,7 +147,7 @@ a {
 
 @media screen and (max-width:480px) {
   .main-heading{
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
