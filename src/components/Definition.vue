@@ -10,7 +10,7 @@
                 </p>
             </div>
             <div class="possibilities lg:py-16 md:py-14 py-8">
-                <h2 class="text-gradient">The possibilities are beyond your imagination</h2>
+                <h2 class="text-gradient section-heading">The possibilities are beyond your imagination</h2>
                 <p class="subtext-color">
                     Explore The Library
                 </p>
@@ -65,9 +65,6 @@
 
 .possibilities h2{
     flex: 1;
-    font-size: 34px;
-    font-weight: 800;
-    line-height: 45px;
 }
 
 .possibilities p{
@@ -85,10 +82,6 @@
     .definition, .possibilities{
         flex-direction: column;
         gap: 40px;
-    }
-
-    .possibilities h2{
-        font-size: 30px;
     }
 
     p{

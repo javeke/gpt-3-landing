@@ -4,6 +4,8 @@
     <Sponsors />
     <Definition />
     <Future />
+    <Possibilities />
+    <Bar />
   </main>
 </template>
 
@@ -13,13 +15,17 @@ import Sponsors from '@/components/Sponsors.vue';
 import Introduction from '@/components/Introduction.vue';
 import Definition from '@/components/Definition.vue';
 import Future from '@/components/Future.vue';
+import Possibilities from '@/components/Possibilities.vue';
+import Bar from '@/components/Bar.vue' 
 
 @Component({
   components:{
     Introduction,
     Sponsors,
     Definition,
-    Future
+    Future,
+    Possibilities,
+    Bar
   }
 })
 export default class Home extends Vue {}

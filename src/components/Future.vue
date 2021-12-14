@@ -2,7 +2,7 @@
     <section class="lg:px-14 sm:px-10 px-8 lg:mx-12 md:mx-6 lg:py-14 sm:py-12 py-8">
         <div class="future-container">
             <div class="future">
-                <h2 class="text-gradient lg:mb-8 sm:mb-6 mb-4">
+                <h2 class="text-gradient section-heading lg:mb-8 sm:mb-6 mb-4">
                     The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.
                 </h2>
                 <p class="subtext-color">Request Early Access to Get Started</p>
@@ -51,9 +51,6 @@
 }
 
 .future h2{
-    font-size: 34px;
-    line-height: 45px;
-    font-weight: 800;
     max-width: 25rem;
 }
 
@@ -85,10 +82,6 @@
 }
 
 @media screen and (max-width:640px) {
-    .future h2{
-        font-size: 30px;
-    }
-
     p{
         font-size: 12px;
     }

@@ -91,6 +91,10 @@ a {
   color: $subtext-color;
 }
 
+.subtext-color-2{
+  color: $subtext-color-2;
+}
+
 .bg-button{
   background-color: $bg-button;
 }
@@ -111,6 +115,11 @@ a {
     --webkit-text-fill-color: transparent;
 }
 
+
+.bar-gradient{
+  background: $bar-gradient;
+}
+
 .indicator{
     position: relative;
 }
@@ -123,6 +132,18 @@ a {
     background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
     top: -10px;
     left: 0px;
+}
+
+.section-heading {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+@media screen and (max-width:640px) {
+  .section-heading{
+    font-size: 30px;
+  }
 }
 
 /* ----------------------------------------------
