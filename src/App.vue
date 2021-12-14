@@ -87,6 +87,10 @@ a {
   background-color: $subtext-color;
 }
 
+.subtext-color{
+  color: $subtext-color;
+}
+
 .bg-button{
   background-color: $bg-button;
 }
@@ -105,6 +109,20 @@ a {
     --webkit-background-clip: text;
     color: transparent;
     --webkit-text-fill-color: transparent;
+}
+
+.indicator{
+    position: relative;
+}
+
+.indicator::before{
+    content: '';
+    width: 38px;
+    height: 3px;
+    position: absolute;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    top: -10px;
+    left: 0px;
 }
 
 /* ----------------------------------------------

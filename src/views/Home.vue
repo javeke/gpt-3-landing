@@ -1,30 +1,27 @@
 <template>
-  <main class="home flex lg:px-14 sm:px-10 px-8 lg:mx-12 md:mx-6 gap-3">
-    <div class="flex flex-col text-content">
-      <h1 class="text-gradient font-black">Let's Build Something <br> amazing with GPT-3 <br> OpenAI </h1>
-      <p class="text-gray-400 py-5 break-words">
-        Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing.
-        Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
-      </p>
-      <form class="flex contact-form">
-        <input class="px-4" type="email" placeholder="Your Email Address">
-        <button class="md:px-6 md:py-3 sm:px-4 sm:py-2 px-2 py-1 bg-button text-white" type="submit">Get Started</button>
-      </form>
-      <div class="people-visits flex items-center justify-center lg:justify-start text-white gap-3">
-        <img src="../assets/people.png" alt="People icons">
-        <p>1,600 people requested access a visit in last 24 hours</p>
-      </div>
-    </div>
-    <div class="flex ai-img">
-      <img src="../assets/ai.png" alt="AI image">
-    </div>
+  <main>
+    <Introduction />
+    <Sponsors />
+    <Definition />
+    <Future />
   </main>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import Sponsors from '@/components/Sponsors.vue';
+import Introduction from '@/components/Introduction.vue';
+import Definition from '@/components/Definition.vue';
+import Future from '@/components/Future.vue';
 
-@Component
+@Component({
+  components:{
+    Introduction,
+    Sponsors,
+    Definition,
+    Future
+  }
+})
 export default class Home extends Vue {}
 </script>
 
@@ -65,17 +62,22 @@ h1{
 }
 
 .ai-img{
-  position: relative;
   width: 100%;
 }
 
 .ai-img img{
+  position: relative;
+  top: -40px;
   width: 100%;
 }
 
 @media screen and (max-width: 1050px) {
   main{
     flex-direction: column;
+  }
+
+  .ai-img img{
+    top: 0px;
   }
 }
 
@@ -88,10 +90,15 @@ h1{
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
+
+  h1{
+    font-size: 36px;
+  }
+
   .contact-form{
     input, button{
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 }

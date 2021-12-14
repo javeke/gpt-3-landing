@@ -21,10 +21,10 @@
         </div>
 
         <div v-if="toggleMenu" class="mobile-nav-container scale-up-center">
-            <div class="mobile-nav">
+            <div class="mobile-nav bg-footer">
                 <div class="mobile-nav-menu">
                     <ul class="flex md:gap-10 gap-4 flex-col items-end">
-                        <li><a href="#"> Home</a></li>
+                        <li class="pt-1"><a href="#"> Home</a></li>
                         <li><a href="#"> What is GPT?</a></li>
                         <li><a href="#"> Open AI</a></li>
                         <li><a href="#"> Case Studies</a></li>
@@ -48,7 +48,7 @@ import { Vue, Component } from 'vue-property-decorator';
 export default class NavBar extends Vue {
     toggleMenu = false;
 
-    onToggleMenu(){
+    onToggleMenu(): void{
         this.toggleMenu = !this.toggleMenu;
     }
 }
@@ -72,11 +72,11 @@ export default class NavBar extends Vue {
 .mobile-nav{
     position: absolute;
     right: 0;
-    top: 50px;
-    min-width: 210px;
+    top: 30px;
+    min-width: 150px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba($color: #000000, $alpha: 0.2);
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .mobile-sign-btns{
